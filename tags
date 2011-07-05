@@ -1,0 +1,70 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACCEPT	spider.c	15;"	d	file:
+ACCEPTCHARSET	spider.c	18;"	d	file:
+ACCEPTENCODING	spider.c	17;"	d	file:
+ACCEPTLANGUAGE	spider.c	16;"	d	file:
+ARRAY_TO_NUM	adns.c	9;"	d	file:
+BuildRequest	spider.c	/^static void BuildRequest(struct tw_hostent* p_host)$/;"	f	file:
+CONNECTION	spider.c	20;"	d	file:
+CONTENTTYPE	spider.c	21;"	d	file:
+ConnectWeb	spider.c	/^static void ConnectWeb(struct tw_hostent* p_host) { \/* connect to web server *\/$/;"	f	file:
+DoOnce	spider.c	/^void DoOnce(struct tw_hostent* p_host) { \/* send and receive *\/$/;"	f
+KEEPALIVE	spider.c	19;"	d	file:
+NTOHS	adns.c	123;"	d	file:
+ReceiveResponse	spider.c	/^static void ReceiveResponse(struct tw_hostent* p_host) $/;"	f	file:
+SendRequest	spider.c	/^static void SendRequest(void) { \/* send my http-request to web server *\/$/;"	f	file:
+USERAGENT	spider.c	14;"	d	file:
+buffer	spider.c	/^static char request[409600] = "", buffer[1024] = "", httpheader[1024] = "";$/;"	v	file:
+check_url	spider.c	/^static void check_url(char* p_url, struct tw_hostent* p_host)$/;"	f	file:
+count	spider.h	/^    int count;$/;"	m	struct:tw_head
+data	adns.h	/^	unsigned char	data[1];	\/* Data, variable length *\/$/;"	m	struct:header
+disp_result	main.c	/^static void disp_result(void)$/;"	f	file:
+dns	spider.h	/^    struct hostent* dns;$/;"	m	struct:tw_hostent	typeref:struct:tw_hostent::hostent
+dns_ip	adns.c	/^char dns_ip[3][4] = {{10, 0, 0, 1}, {218, 2, 135, 1}, {61, 147, 37, 1}};$/;"	v
+dns_poll	adns.c	/^void dns_poll(int sockfd)$/;"	f
+dns_request	adns.c	/^static void dns_request(struct tw_hostent *p_host)$/;"	f	file:
+dns_server	adns.c	/^struct sockaddr_in dns_server;$/;"	v	typeref:struct:sockaddr_in
+end	spider.h	/^    struct tw_hostent* end;$/;"	m	struct:tw_head	typeref:struct:tw_head::tw_hostent
+epfd	main.c	/^int epfd;$/;"	v
+events	main.c	/^struct epoll_event events[100];$/;"	v	typeref:struct:epoll_event
+file	spider.h	/^    char file[30];$/;"	m	struct:tw_hostent
+find_record	main.c	/^static unsigned char find_record(const char *p_name)$/;"	f	file:
+find_url	spider.c	/^void find_url(struct tw_hostent* p_host)$/;"	f
+flags	adns.h	/^	uint16_t	flags;		\/* Flags *\/$/;"	m	struct:header
+head	main.c	/^struct tw_head head;$/;"	v	typeref:struct:tw_head
+head	spider.h	/^    struct tw_hostent* head;$/;"	m	struct:tw_head	typeref:struct:tw_head::tw_hostent
+header	adns.h	/^struct header $/;"	s
+hostent_index	main.c	/^struct tw_hostent* hostent_index[100];$/;"	v	typeref:struct:tw_hostent
+httpheader	spider.c	/^static char request[409600] = "", buffer[1024] = "", httpheader[1024] = "";$/;"	v	file:
+id	spider.h	/^    int id;$/;"	m	struct:tw_hostent
+init_dns	adns.c	/^void init_dns(void)$/;"	f
+init_head	main.c	/^static void init_head(struct tw_head* p_head)$/;"	f	file:
+init_node	main.c	/^void init_node(const char* p_name)$/;"	f
+init_sock	adns.c	/^static void init_sock(struct tw_hostent *p_host)$/;"	f	file:
+ip	spider.h	/^    struct in_addr* ip[10];$/;"	m	struct:tw_hostent	typeref:struct:tw_hostent::in_addr
+is_handled	spider.h	/^    unsigned char is_handled;$/;"	m	struct:tw_hostent
+join_list	main.c	/^static void join_list(struct tw_hostent* p_host)$/;"	f	file:
+key_word	spider.h	/^    char key_word[30];$/;"	m	struct:tw_hostent
+main	main.c	/^int main(int argc, const char *argv[])$/;"	f
+name	spider.h	/^    char name[30];$/;"	m	struct:tw_hostent
+nanswers	adns.h	/^	uint16_t	nanswers;	\/* Answers *\/$/;"	m	struct:header
+nauth	adns.h	/^	uint16_t	nauth;		\/* Authority PRs *\/$/;"	m	struct:header
+next	spider.h	/^    struct tw_hostent* next;$/;"	m	struct:tw_hostent	typeref:struct:tw_hostent::tw_hostent
+nother	adns.h	/^	uint16_t	nother;		\/* Other PRs *\/$/;"	m	struct:header
+nqueries	adns.h	/^	uint16_t	nqueries;	\/* Questions *\/$/;"	m	struct:header
+parse_udp	adns.c	/^static void parse_udp(struct tw_hostent *p_host, const unsigned char *pkt, int len)$/;"	f	file:
+prev	spider.h	/^    struct tw_hostent* prev;$/;"	m	struct:tw_hostent	typeref:struct:tw_hostent::tw_hostent
+query_dns	adns.c	/^void query_dns(struct tw_hostent* p_host)$/;"	f
+request	spider.c	/^static char request[409600] = "", buffer[1024] = "", httpheader[1024] = "";$/;"	v	file:
+server_addr	spider.c	/^static struct sockaddr_in server_addr;$/;"	v	typeref:struct:sockaddr_in	file:
+sockfd	spider.c	/^static int sockfd;$/;"	v	file:
+sockfd	spider.h	/^    int sockfd;$/;"	m	struct:tw_hostent
+sum	spider.h	/^    int sum;$/;"	m	struct:tw_head
+tid	adns.h	/^	uint16_t	tid;		\/* Transaction ID *\/$/;"	m	struct:header
+tw_head	spider.h	/^struct tw_head {$/;"	s
+tw_hostent	spider.h	/^struct tw_hostent{$/;"	s
